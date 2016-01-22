@@ -62,7 +62,7 @@
 			<div class="form-group">
 				<label class="col-sm-2 control-label labels">Senha:</label> 
 				<div class="col-sm-10">
-					<input type="text" name="senha" class="form-control col-sm-10" value="<?php echo $linha["senha"]; ?>" required/> </br>
+					<input type="password" name="senha" class="form-control col-sm-10" value="<?php echo $linha["senha"]; ?>" required/> </br>
 				</div>
 			</div>		
 			
