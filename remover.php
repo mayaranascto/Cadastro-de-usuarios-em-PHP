@@ -11,6 +11,7 @@
 		<?php
 
 			include 'config.php';
+			include 'funcoes.php';
 
 			echo "<h1 class='auth'>Você tem certeza que deseja excluir o registro</h1>";
 			echo "<a href='removido.php'><input type='submit' value='Sim' class='btn btn-primary btn-sm button'/></a>";
@@ -19,7 +20,7 @@
 
 			$id = $_GET["id"];
 
-			mysql_query("DELETE FROM usuarios WHERE id='$id'");
+			delete($id);
 
 		?>
 		</div>

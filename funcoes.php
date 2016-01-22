@@ -11,6 +11,15 @@
 	function atualizar($nome, $sobrenome, $pais, $estado, $cidade, $email, $senha, $id){
 		$sql = "UPDATE usuarios SET nome='$nome', sobrenome='$sobrenome', pais='$pais', estado='$estado', cidade='$cidade', email='$email', senha='$senha'
 				WHERE id='$id'";
+		//var_dump($sql);
+		//die();
+		mysql_query($sql);
+	}
+
+	function delete($id){
+		$sql = "DELETE FROM usuarios WHERE id = '$id'";
+		//var_dump($sql);
+		//die();
 		mysql_query($sql);
 	}
 
@@ -19,4 +28,5 @@
 		mysql_query($sql);
 		mysql_fetch_assoc($sql);
 	}
+
 ?>

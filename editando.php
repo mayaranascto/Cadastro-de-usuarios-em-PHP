@@ -22,8 +22,7 @@
 		$senha = $_POST['senha'];
 		$id = $_POST['id'];
 
-		mysql_query("UPDATE usuarios SET nome='$nome', sobrenome='$sobrenome', pais='$pais', estado='$estado', cidade='$cidade', email='$email', senha='$senha'
-					 WHERE id='$id'");
+		atualizar($nome, $sobrenome, $pais, $estado, $cidade, $email, $senha, $id);
 
 		echo "<div calss='centro'>";
 		echo "<h3 class='auth'>Usuário Editado com Sucesso!</h3>";
